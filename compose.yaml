@@ -1,0 +1,12 @@
+services:
+  crate1:
+    restart: always
+    build:
+      dockerfile: crate1/Dockerfile
+      context: rust-workspace
+  
+  crate2:
+    restart: always
+    build:
+      dockerfile: crate2/Dockerfile
+      context: rust-workspace
